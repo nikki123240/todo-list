@@ -1,13 +1,107 @@
-body {
+*{
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.main_div{
+  width: 100%;
+  height: 100vh;
+  background: rgb(55, 115, 172);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
+
+.center_div{
+  width: 25%;
+  height: 80vh;
+  background: rgb(46, 182, 236);
+  border-radius: 14px;
+  box-shadow: 5px 5px 25px -5px rgb(54, 40, 185);
+}
+
+h1{
+  color: white;
+  background: transparent;
+  background-color: tomato;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+input{
+  text-align: center;
+  background:transparent;
+  top: 10px;
+  height: 32px;
+  width: 60%;
+  font-weight: 500;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid rgb(113, 36, 201);
+}
+
+button{
+  border-radius: 50%;
+  width: 40px;
+  min-height: 40px;
+  margin-left: 16px;
+  color:blue;
+  border: none;
+  outline: none;
+  border-color: transparent;
+  font-size: 30px;
+  background-color:tomato;
+  box-shadow: 5px 5px 15px -5px palevioletred;
+}
+
+button:hover{
+  background-color: palegreen;
+}
+
+ol{
+  margin-top: 30px;
+}
+
+ol li{
+  padding-left: 0px;
+  text-align: left;
+  font-size: 30px;
+  /* list-style: none; */
+  align-items: center;
+  display: flex;
+  text-transform: capitalize;
+  color:white;
+  min-height: 40px;
+}
+
+.todo_style{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: row;
+  /* margin-left: 23px; */
+  /* padding:0 12px 0 12px; */
+}
+
+.todo_style .fa-times{
+  width: 29px;
+    height: 23px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: bisque;
+    border-radius: 50%;
+    margin: 0 15px 0 35px;
+    color: darkorange;
+    box-shadow: 2px -6px 25px -4px;
+}
+
+.todo_style .fa-times:hover{
+  color: red;
+}
+
